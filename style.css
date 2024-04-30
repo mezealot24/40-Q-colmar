@@ -171,16 +171,15 @@ button{
     padding: 16px;
 }
 
-.course-title{
-    text-align: center;
-}
-
-
-.course {
+.course-container {
     display: flex;
-    flex-direction: column;
-    
-    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  .course-block {
+    flex-basis: calc((100% - 64px) / 3);
+    background-color: white;
   }
   
   
