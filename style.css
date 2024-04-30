@@ -6,74 +6,60 @@
   padding: 0;
 }
 
-nav {    
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 100%;
-    height: 64px;
-    padding-left: 24px;
-    padding-right: 24px;
-          
-        .logo-holder {
-          display: flex;
-          align-items: center;
-          font-weight: 600;
-          color: rgb(173, 42, 42);
-        
-          .logo {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 28px;
-            height: 32px;
-            width: 32px;
-          }
-          .logo-text {
-            flex: 1;
-          }
-        }
-    }   
-
-
-h1 {
-    font-size: 32px;
-    line-height: 1;
-    
-   }
-  
-h2 {
-    font-size: 26px;
-    line-height: 1;
-    font-weight: 300;
-       
-   }
-  
-h3 {
-    font-size: 20px;    
-    line-height: 1;
-    
-   }
-
-  a{
-    text-decoration: none;
-    display: inline-block;
-
-  }
-
-
-
-#nav-menu{
-    display: flex;
-    font-size: 24px;
-    gap: 16px;
-    list-style: none;
-    
+:root{
+    --dark-grey:#3c3b3d;
+    --grey1:#8e8e8e;
+    --grey2:#dfdfdf;
+    --grey3:#e9e9e9;
 }
 
+
+/* Navbar */
+nav {    
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    padding:0px 24px;
+    }
+
+nav > ul {
+    display: flex;
+    list-style:none;
+    align-items:center;
+}
+
+nav > li {
+    margin-left :16px;
+}
+
+nav a{
+    list-style: none;
+    text-decoration: none;
+    color:var(--dark-grey) ;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+
+}
+
+.logo > p{
+    display: inline;
+    font-weight:bold;
+    color:var(--dark-grey)
+}
+
+.logo > span {
+    font-weight: mediem;
+    color:var(--grey2)
+}
+
+
 .hero{
-    background-color: gainsboro;    
+    background-color:var(--grey1);    
     padding:32px 24px;
     display: flex;
     width: 100%;
@@ -87,9 +73,9 @@ h3 {
 
 .hero-banner{
     display: flex;
+    padding: 32px 24px;
     
-    
-    .info-left{
+    .hero-left{
         display: flex;
         flex-direction: column;
         width: 60%;       
@@ -108,67 +94,81 @@ h3 {
     flex-direction: column;    
     font-size: 3em;
     gap: 1em;
+    padding-right: 10%;    
     h1{
         font-size: 64px;
         font-weight:bold;
-        text-align:left
+        text-align:left;
     }
 
     
 }
 
 button{
-    padding: 8px 0px;
+    padding: 16px;
     background-color: rgb(109, 100, 100);
     color: white;
+    font-size: large;
     border: none;
 }
 
 .information{
+    background-color: rgb(255, 255, 255);    
+    padding:32px 24px;
     display: flex;
-    padding: 32px 24px;
+    width: 100%;
     
     .info-left{
         display: flex;
         flex-direction: column;
-        width: 60%;       
-        img{
-            width: 100%;
+        padding-left: 24px;
+        height: 60%;       
+        .info-pic-left{
+            height: 100%;
             overflow: hidden;        
         }
     }      
        
 }
 
-
-
 .info-right{      
     display: flex;
     flex-direction: column;
     flex-basis: auto;
-    width: 40%;
-    padding-top: 32px;
-    gap:10px;
+    height: 40%;
+    padding-left: 16px;
+    gap:2rem;
 }
 
 .info-right-card{
     display: flex;
     width: 100%;       
     font-size: 1em;
-    gap: 1em;
+    gap: 2em;
+   
     
 }  
+
+.info-right-card:nth-child(3) {
+    background-color: gainsboro ;
+}
 
 .info-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
+
 }
 
 .info-pic{
     height: auto;
     width: 35%;
     padding: 16px;
+}
+
+.main-container-course{
+    width: 100%;
+    border-block: 1;
 }
 
 .course-container {
