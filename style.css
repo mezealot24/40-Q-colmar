@@ -6,32 +6,75 @@
   padding: 0;
 }
 
-nav{
-    display: flex;    
+nav {    
+    margin: auto;
+    display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 100%;
+    height: 64px;
     padding-left: 24px;
     padding-right: 24px;
-    width: auto;
-    height: 64px;
+          
+        .logo-holder {
+          display: flex;
+          align-items: center;
+          font-weight: 600;
+          color: rgb(173, 42, 42);
         
-}
+          .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            height: 32px;
+            width: 32px;
+          }
+          .logo-text {
+            flex: 1;
+          }
+        }
+    }   
 
-.nav-logo{
-    display: flex;
-    align-items: center;
-    font-size: 24px;    
-}
 
-.nav-menu{
+h1 {
+    font-size: 32px;
+    line-height: 1;
+    
+   }
+  
+h2 {
+    font-size: 26px;
+    line-height: 1;
+    font-weight: 300;
+       
+   }
+  
+h3 {
+    font-size: 20px;    
+    line-height: 1;
+    
+   }
+
+  a{
+    text-decoration: none;
+    display: inline-block;
+
+  }
+
+
+
+#nav-menu{
     display: flex;
+    font-size: 24px;
     gap: 16px;
+    list-style: none;
+    
 }
 
 .hero{
     background-color: gainsboro;    
-    padding-left: 24px;
-    padding-right: 24px;
+    padding:32px 24px;
     display: flex;
     width: 100%;
 
@@ -41,22 +84,21 @@ nav{
 
 }
 
-button{
-    padding: 8px 0px;
-    background-color: rgb(109, 100, 100);
-    color: white;
-    border: none;    
-}
 
 .hero-banner{
     display: flex;
-    width: 60%;
-    padding: 32px 24px;    
-    img{
-        overflow: hidden;
-        
-    }
-
+    
+    
+    .info-left{
+        display: flex;
+        flex-direction: column;
+        width: 60%;       
+        img{
+            width: 100%;
+            overflow: hidden;        
+        }
+    }      
+       
 }
 
 .hero-container{
@@ -65,10 +107,83 @@ button{
     width: 40%;
     flex-direction: column;    
     font-size: 3em;
-    gap: 16px;
-    padding-right:10%;
+    gap: 1em;
+    h1{
+        font-size: 64px;
+        font-weight:bold;
+        text-align:left
+    }
+
     
 }
+
+button{
+    padding: 8px 0px;
+    background-color: rgb(109, 100, 100);
+    color: white;
+    border: none;
+}
+
+.information{
+    display: flex;
+    padding: 32px 24px;
+    
+    .info-left{
+        display: flex;
+        flex-direction: column;
+        width: 60%;       
+        img{
+            width: 100%;
+            overflow: hidden;        
+        }
+    }      
+       
+}
+
+
+
+.info-right{      
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto;
+    width: 40%;
+    padding-top: 32px;
+    gap:10px;
+}
+
+.info-right-card{
+    display: flex;
+    width: 100%;       
+    font-size: 1em;
+    gap: 1em;
+    
+}  
+
+.info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-pic{
+    height: auto;
+    width: 35%;
+    padding: 16px;
+}
+
+.course-title{
+    text-align: center;
+}
+
+
+.course {
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+  }
+  
+  
 
 
 

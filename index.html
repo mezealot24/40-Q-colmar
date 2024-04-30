@@ -8,18 +8,34 @@
   </head>
   <body>
     <header>
-      <nav class="navbar">
-        <div class="nav-logo">
-          <img src="./assets/images/ic-logo.svg" class="nav-link-logo">
-          <p>COLMAR <span>ACADEMY</span></p>
-        </div>
-
-        <div class="nav-menu">          
-            <span class="menu">On campas</span>
-            <span class="menu">Online</span>
-            <span class="menu">For companies</span>
-            <span class="menu">Sign in</span>          
-        </div>        
+      <nav>
+        <div>
+          <a href="#" class="logo-holder">
+          <img src="./assets/images/ic-logo.svg" class="logo"/>
+          <div class="logo-text"><h1>COLMAR <span>ACADEMY</span></div>
+          </a>
+        </div>   
+        
+        
+          <ul id="nav-menu">
+            <li>
+              <a href="#" class="nav-button">On campus</a>
+            </li>
+            <li>
+              <a href="#" class="nav-button">Online</a>
+            </li>
+            <li>
+              <a href="#" class="nav-button">For companies</a>
+            </li>
+            <li>
+              <a href="#" class="nav-button">Sign in</a>
+            </li>
+          </ul>
+        
+          <!--<a href="#" class="mobile-toggle" onClick="toggleMobileMenu();">
+            <img src="./images/mobileToggle.svg" alt="Mobile Toggle" /></a>-->
+          
+        </nav>    
       </nav>
     </header>
 
@@ -33,7 +49,7 @@
         
           <div class="hero-container">
             <h1>Learn something new everyday</h1>
-            <p>Lorem ipsum dolor sit amet aoapqa con sint qui dolor aoapan voluptatibus?</p>
+            <h2>Lorem ipsum dolor sit amet aoapqa con sint qui dolor aoapan voluptatibus?</h2>
             <button>Start Here</button>
           </div>
         
@@ -41,30 +57,127 @@
 
       <section class="information">
         <div class="info-left">
-          <img src="./assets/images/information-main.jpg">
+          <img class="info-pic" src="./assets/images/information-main.jpg">
           <h2>It's doesn't hurt to keep practicing</h2>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore vero modi assumenda inventore veritatis necessitatibus ipsa, quod nobis harum vitae sapiente sunt consequatur, nam aspernatur omnis? Necessitatibus saepe aspernatur repellat?</p>
           <p class="info-footer" >Emmanuel Sir. Stragist at Hiring.com</p>
         </div>
 
-        <div class="info-right">
+        <div class="info-right">       
           <div class="info-right-card">
-            <div class="card-1">
-              <img class="info-pic" src="./assets/images/information-orientation.jpg">
-              <h2>Orientation Date</h2>
-              <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+            <img  class="info-pic" src="./assets/images/information-campus.jpg"/>           
+
+            <div class="info-container">
+              <h1>Orientation Date</h1>
+              <h2>Lorem ipsum dolor sit amet aoapqa con sint qui dolor aoapan voluptatibus?</h2>
+              <a href="#">Read more</a>
+            </div>
+            </div>        
+          
+          
+
+            <div class="info-right-card">            
+              <img class="info-pic" src="./assets/images/information-guest-lecture.jpg"/>
+
+            <div class="info-container">
+              <h1>Our Campus</h1>
+              <h2>Tue 10/11 & Wed 10/12: 8am-3pm</h2>
               <a href="#">Read more</a>
             </div>
             </div>
+          
 
+            <div class="info-right-card">            
+              <img class="info-pic" src="./assets/images/information-campus.jpg">
+            <div class="info-container">
+              <h1>Our Guest lecture</h1>
+              <h2>Tue 10/11 & Wed 10/12: 8am-3pm</h2>
+              <a href="#">Read more</a>
+            </div>
+            </div>
           </div>
-        </div>
+     
       </section>
+
 
       <section class="course">
-        <div>
-        </div>ggg 
-      </section>
+        <section id="course-container" class="featured">
+          <h2>Start learning</h2>
+          <div class="course-list">
+            <article>
+              <figure>
+                <img
+                  src="./assets/images/course-software.jpg"
+                  alt="computer"
+                  width="100%"
+                />
+              </figure>
+              <h3>Software Engineer</h3>
+              <p>COURSE</p>
+              <p>Web Development, Mobile Development, iOT, APIs</p>              
+            </article>
+            <article>
+              <figure>
+                <img
+                  src="./assets/images/course-computer-art.jpg"
+                  alt="mobile"
+                  width="100%"
+                />
+              </figure>
+              <h3>Computer Art</h3>
+              <p>COURSE</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea</p>
+            </article>
+            <article>
+              <figure>
+                <img
+                  src="./assets/images/course-design.jpg"
+                  alt="human with camera"
+                  width="100%"
+                />
+              </figure>
+              <h3>Design</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, minima!</p>
+            </article>
+            <article>
+              <figure>
+                <img
+                  src="./assets/images/course-design.jpg"
+                  alt="human with camera"
+                  width="100%"
+                />
+              </figure>
+              <h3>Design</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, minima!</p>
+            </article>
+            <article>
+              <figure>
+                <img
+                  src="./assets/images/course-design.jpg"
+                  alt="human with camera"
+                  width="100%"
+                />
+              </figure>
+              <h3>Design</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, minima!</p>
+            </article>
+            <article>
+              <figure>
+                <img
+                  src="./assets/images/course-design.jpg"
+                  alt="human with camera"
+                  width="100%"
+                />
+              </figure>
+              <h3>Design</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, minima!</p>
+            </article>
+          </div>
+        </section>
+        
+
+        
+      
     </main>
   </body>
 </html>
